@@ -1,51 +1,75 @@
-/*El jugador debe alcanzar una Puntuación Objetivo (Blind) en cada ronda apostando fichas. 
-Para lograrlo, seleccionará combinaciones de cartas de su mano (par, trío, color, full house). 
-Cada combinación tiene un puntaje base y un multiplicador básico.*/
 #include <iostream>
+#include <windows.h>
 using namespace std;
 
-int main (){
-int cartas=14,manos=3,menu;
-//no sera aleatorio,tendra un sistema de cartas ya definido
-    cout<<"CASINO MONTERCARLOJUANCARLO"<<endl;
-    do
-    {
-      
-     cout<<"Porfavor elige el modo que deseas jugar"<<endl;
-     cout<<"1.high or low"<<endl;
-     cout<<"2.Lucky"<<endl;
-     cout<<"3.Poker"<<endl;
-     cin>>menu;
+int main()
+{
+   SetConsoleOutputCP(65001);
+   int cartas = 14, manos = 3, menu;
+   // no sera aleatorio,tendra un sistema de cartas ya definido
+   cout << "🟥🟥⬛⬛⬜⬜🟥🟥⬛⬛⬜⬜🟥🟥⬛⬛⬜⬜🟥🟥⬛⬛⬜⬜🟥🟥⬛⬛⬜⬜" << endl;
+cout << "╭────────────────────────────────────────────────────────────╮" << endl;
+cout << "│              🎰🎲  C L A S S I C   C A R D S  🃏♣️          │" << endl;
+cout << "╰────────────────────────────────────────────────────────────╯" << endl;
+cout << "⬛⬛🟥🟥⬜⬜⬛⬛🟥🟥⬜⬜⬛⬛🟥🟥⬜⬜⬛⬛🟥🟥⬜⬜🟥🟥⬛⬛⬜⬜" << endl;
+cout << endl;
+cout << endl;
+   do
+   {
 
+cout << "╭────────────────────────────────────────────────────────────╮" << endl;
+cout << "│                     CASINO VIRTUAL C++ 🗣️                   │" << endl;
+cout << "├────────────────────────────────────────────────────────────┤" << endl;
+cout << "│                                                            │" << endl;
+cout << "│   [1] Poker (Five-Card Draw)                               │" << endl;
+cout << "│   [2] High or Low (Mayor o Menor)                          │" << endl;
+cout << "│   [3] Lucky Shot (Tiro de la suerte)                       │" << endl;
+cout << "│                                                            │" << endl;
+cout << "│   [4] Salir del Casino                                     │" << endl;
+cout << "│                                                            │" << endl;
+cout << "├────────────────────────────────────────────────────────────┤" << endl;
+cout << "│                  ¡Hagan sus apuestas!                      │" << endl;
+cout << "╰────────────────────────────────────────────────────────────╯" << endl;
+ cout << " Seleccione una opcion: ";
+      cin >> menu;
+      cout << endl;
+      cout << endl;
 
-     switch (menu)
-     {
+      switch (menu)
+      {
      case 1:
-        cout<<"Bienvenido a high or low"<<endl;
-        /*elegir carta al azar y decidir si sera alta o baja y dependiendo 
-        si el usuario adivina lo que sera la carta pues ganara y si no lo lograra perderia*/
-        break;
-     case 2:
-        cout<<"Lucky"<<endl;
-        /*tirar dados al azar 3 veces por lo menos y dependiendo de la suma de los dados
-        si logra un puntaje igual o mayor al respectivo puntaje ganara y si es menor perdera*/
-        break;
-     case 3:
-        cout<<"Poker"<<endl;
-        /*se otorgaran 5 cartas y se iran descartando */
-        break;      
-     
-     default:
-       cout<<"ERROR. Porfavor seleccionar una de las opciones dadas"<<endl;
-        break;
-     }
+    cout << "╭────────────────────────────────────────────────────────────╮" << endl;
+    cout << "│ 🃏 Haz elegido     Video Poker (Five-Card Draw)            │" << endl;
+    cout << "├────────────────────────────────────────────────────────────┤" << endl;
+    cout << "│ ✨ La suerte puede estar de tu lado. Piensa rapido,        │" << endl;
+    cout << "│    arma tu mejor jugada. ¡¡¡VE POR EL JACKPOT!!! ✨        │" << endl;
+    cout << "╰────────────────────────────────────────────────────────────╯" << endl;
+    break;
 
-} while (menu<1 || menu >3);
-   
-    
-    
+case 2:
+    cout << "╭────────────────────────────────────────────────────────────╮" << endl;
+    cout << "│ 🎲 Haz elegido         High or Low (Mayor o Menor)         │" << endl;
+    cout << "├────────────────────────────────────────────────────────────┤" << endl;
+   cout << "│🔥Los dados están en el aire.  ¿El total será mayor o menor?│" << endl;
+    cout << "│    ¡Arriesga, siente la adrenalina y duplica tus premios!🔥│" << endl;
+    cout << "╰────────────────────────────────────────────────────────────╯" << endl;
+    break;
 
+      case 3:
+    cout << "╭────────────────────────────────────────────────────────────╮" << endl;
+    cout << "│ 🎲 Haz elegido                  Lucky Shot                 │" << endl;
+    cout << "├────────────────────────────────────────────────────────────┤" << endl;
+    cout << "│    ¡Un solo tiro, una sola oportunidad! TODO O NADA        │" << endl;
+    cout << "│    ¡Lanza con fuerza y deja que brille tu suerte!          │" << endl;
+    cout << "╰────────────────────────────────────────────────────────────╯" << endl;
+    break;
 
+      default:
+         cout << "--------------ERROR. porfavor elegir solamente uno de los numeros propuestos----------" << endl;
+         break;
+      }
 
-    return 0;
+   } while (menu < 1 || menu > 3);
+
+   return 0;
 }
