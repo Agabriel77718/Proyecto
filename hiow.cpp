@@ -13,6 +13,7 @@ int resultado;
 // MENU para cuando el usuario quiera jugar pero por el momento solo jugar
      cout<<"OLA,BIENVENIDO A HIGHT O LOW"<<endl;
       cout<<"1.JUGAR UNA RONDA"<<endl;
+      cout<<"2.SALIR DEL JUEGO"<<endl;
      cin>>menu;
 
      
@@ -24,8 +25,7 @@ int resultado;
           cin>>resultado;
 
             cout<<"y la carta fueeeeeeeeeeeeeee unnnnnn:"<<carta2<<endl;
-
-      
+          
 
       if (carta2 > carta1 &&  resultado == 1)
       {
@@ -39,10 +39,14 @@ int resultado;
         cout<<"PERDISTE,NO ACERTASTE"<<endl;
       }
       break;
+        case 2 :
+            cout<<"SALISTE DEL JUEGO"<<endl;
+             break;
       
      default:
       cout<<"ERROR. OPCION INGRESADA NO VALIDA"<<endl;
        break;
+       
      
   }
        return 0;
