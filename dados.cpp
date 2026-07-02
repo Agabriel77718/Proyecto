@@ -28,8 +28,8 @@ SetConsoleOutputCP(CP_UTF8); //Codigo que permite que los emojis aparezac
 srand(time(0));// Inicia la semilla para que se generen los números aleatorios
 char opcion = 0;// igual a 0 pera evitar basura
 cout<<" == 🎲🎰 Bienvenido a Lucky Shot 🎰🎲 == "<<endl;
-cout<<"🟥 =======================================🍀"<<endl;
-cout<<"       ⬛=== CASINO DE DADOS ==== 🎲" << endl;
+cout<<"🟥 ===========================🍀"<<endl;
+cout<<"⬛=== CASINO DE DADOS ==== 🎲" << endl;
 cout<<"🟥Si la Suma >= 8 = Ganas  ☘️" << endl;
 cout<<"⬛Si la Suma <= 7 = Pierdes🎲" << endl;
 cout<<"🟥=========================🍀" << endl;
