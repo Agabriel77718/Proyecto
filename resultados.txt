@@ -1,0 +1,1 @@
+Jugador1: 122 pts | Jugador2: 91 pts | Ganador: Jugador 1

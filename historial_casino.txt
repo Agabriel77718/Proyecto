@@ -1,0 +1,3 @@
+Jugador: Eduardo | Apuesta: $50 | Resultado: GANOOOOOOOO | Dinero: $150
+Jugador: eduardo | Apuesta: $2 | Resultado: PERDIO MONEY | Dinero: $98
+Jugador: eduardo | Apuesta: $1 | Resultado: GANOOOOOOOO | Dinero: $99
