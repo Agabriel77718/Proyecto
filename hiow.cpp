@@ -33,6 +33,7 @@ int resultado;
       }
       else if(carta2 < carta1 && resultado == 2)
       {
+        /*aqui hace falta que funcione este comando*/
          cout<<"GANASTE 1000000000000 PESOS, ERA MAS BAJO"<<endl;
       }
       else {
