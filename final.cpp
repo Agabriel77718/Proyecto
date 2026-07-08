@@ -93,11 +93,11 @@ case 2:
     break;
 
       default:
-         cout << "--------------ERROR. porfavor elegir solamente uno de los numeros propuestos----------" << endl;
+         cout << "--------------Gracias por hacer tus apuestas en C L A S S I C   C A R D S te esperamos para mas apuestas!!!----------" << endl;
          break;
       }
 
-   } while (menu < 1 || menu > 3);
+   } while (menu !=4);
 
    return 0;
 }
